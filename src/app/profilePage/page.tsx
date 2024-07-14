@@ -39,6 +39,14 @@ const ProfilePage = () => {
         <Sidebar />
         <div className="flex-grow">
           <ProfileHeader />
+          <div className="bg-green-900 gap-72 text-white flex justify-center space-x-4 py-2 rounded-lg">
+            <button className="font-bold  flex gap-2 py-2 px-4">
+              <i className="text-white" data-feather="plus-square"></i>POST
+            </button>
+            <button className="font-bold flex gap-2 py-2 px-4">
+              <i className="text-white " data-feather="heart"></i>LIKE
+            </button>
+          </div>
           <div className="post-section text-black p-4">
             {posts.map((post, index) => (
               <PostDisplay
@@ -60,7 +68,7 @@ const ProfilePage = () => {
 };
 
 const ProfileHeader = () => (
-  <div className="profile-header max-h-screen bg-white p-4 shadow">
+  <div className="profile-header max-h-screen mb-2 bg-white p-4 shadow">
     <div className="relative">
       <img src="/sample-pfp.png" alt="Cover" className="w-full h-48 object-cover rounded-t-lg" />
       <div className="profile-info absolute bottom-0 left-4 transform translate-y-1/2">
@@ -71,17 +79,21 @@ const ProfileHeader = () => (
         EDIT
       </button>
     </div>
-    <div className="mt-16 ml-4 flex items-center justify-between">
+    <div className="mt-16 mb-7  ml-4 flex items-start justify-between">
       <div>
         <h1 className="text-2xl text-black font-bold">@Yuna</h1>
         <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur</p>
-        <div className="flex space-x-4 mt-2">
-          <span className="text-black">Followers <br /> 999K</span>
-          <span className="text-black">Following <br /> 1M</span>
-        </div>
       </div>
-      <div className="mr-4">
-        <i data-feather="more-vertical"></i>
+
+      <div className="flex space-x-4  mr-6">
+        <span className="text-black text-right">
+          <div className="font-bold">Followers</div>
+          <div className="text-sm text-center">999k</div>
+        </span>
+        <span className="text-black text-right">
+          <div className="font-bold ">Following</div>
+          <div className="text-sm text-center">1M</div>
+        </span>
       </div>
     </div>
   </div>
