@@ -4,8 +4,8 @@ import React from "react";
 import Sidebar from "../../components/sidebar";
 import Navbar from "../../components/navbar";
 import PostDisplay from "../../components/PostDisplay";
-import LastActiveUser from "../../components/LastActiveUser";
-import feather from "feather-icons"; // Ensure you've imported feather-icons properly
+import LastActiveUser from "../../components/ListActiveUser";
+import feather from "feather-icons"; 
 
 const TestPage: React.FC = () => {
   const posts = [
@@ -30,7 +30,7 @@ const TestPage: React.FC = () => {
     },
   ];
 
-  const LastactiveUsers = [
+  const ListactiveUsers = [
     {
       username: "rajablits",
       displayName: "NoitrX",
@@ -93,7 +93,7 @@ const TestPage: React.FC = () => {
           <div className="max-w-screen bg-white  p-4 shadow-md">
             <h2 className="text-xl font-bold mr-10 text-green-900 mb-4">LIST ACTIVE USER</h2>
             <div className="space-y-3">
-              {LastactiveUsers.map((user, index) => (
+              {ListactiveUsers.map((user, index) => (
                 <LastActiveUser
                   key={index}
                   username={user.username}

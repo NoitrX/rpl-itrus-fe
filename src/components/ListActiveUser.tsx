@@ -2,13 +2,13 @@
 import React, { useEffect } from 'react';
 import feather from 'feather-icons';
 
-interface LastActiveUserProps {
+interface ListActiveUserProps {
   username: string;
   displayName: string;
   profilePicture: string;
 }
 
-const LastActiveUser: React.FC<LastActiveUserProps> = ({ username, displayName, profilePicture }) => {
+const LastActiveUser: React.FC<ListActiveUserProps> = ({ username, displayName, profilePicture }) => {
   useEffect(() => {
     feather.replace();
   }, []);
