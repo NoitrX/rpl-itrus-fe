@@ -8,22 +8,28 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div className="text-black bg-white p-4 flex items-center">
-      <img src="/logo.png" alt="Logo" className="h-24 mr-4" />
-      <h2 className="text-emerald-800 font-bold flex text-2xl mb-3">ITRUS</h2>
-      <form className="flex items-center w-2/5 relative mx-32 mb-2">
+    <nav className="flex items-center justify-between p-4 bg-white shadow">
+      <div className="flex items-center space-x-2">
+        <img src="/logo.png" alt="Logo" className="h-24" />
+        <span className="text-lg font-bold text-green-900">ITRUS</span>
+      </div>
+      <div className="relative w-1/3">
         <input
-          type="search"
-          placeholder="Cari apa nich?"
-          className="rounded-md h-11 w-full px-5 text-black border-2 border-white bg-gray-200 pr-10"
+          type="text"
+          placeholder="Cari Apa nich ? ...."
+          className="border border-gray-300 rounded-full px-4 py-2 w-full"
         />
         <button
           type="submit"
           data-feather="search"
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500"
+          className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"
         ></button>
-      </form>
-    </div>
+      </div>
+      <div className="flex items-center space-x-2">
+        <span className="text-black">Yuna_1234</span>
+        <img src="/sample-pfp.png" alt="Profile" className="h-8 w-8 rounded-full" />
+      </div>
+    </nav>
   );
 };
 
