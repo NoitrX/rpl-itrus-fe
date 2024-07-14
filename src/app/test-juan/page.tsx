@@ -4,7 +4,8 @@ import React from "react";
 import Sidebar from "../../components/sidebar";
 import Navbar from "../../components/navbar";
 import PostDisplay from "../../components/PostDisplay";
-import feather from "feather-icons";
+import LastActiveUser from "../../components/LastActiveUser";
+import feather from "feather-icons"; // Ensure you've imported feather-icons properly
 
 const TestPage: React.FC = () => {
   const posts = [
@@ -29,32 +30,43 @@ const TestPage: React.FC = () => {
     },
   ];
 
+  const LastactiveUsers = [
+    {
+      username: "rajablits",
+      displayName: "NoitrX",
+      profilePicture: "/sample-pfp.png",
+    },
+    {
+        username: "rajablits",
+        displayName: "NoitrX",
+        profilePicture: "/sample-pfp.png",
+    }
+  ];
+
   return (
     <div className="max-w-screen bg-white flex flex-col">
       <Navbar />
       <div className="flex flex-grow">
         <Sidebar />
-
         <div className="flex-grow p-4">
-          <div className="bg-white p-4 rounded-lg shadow mb-4   ">
+          <div className="bg-white p-4 rounded-lg shadow mb-4">
             <div className="flex items-center space-x-2 mb-2">
               <img src="/sample-pfp.png" alt="Profile" className="h-10 w-10 rounded-full" />
               <input type="text" placeholder="Gamau CRT Nih ?..." className="border border-gray-300 rounded-full px-4 py-2 flex-grow" />
             </div>
-            <div className="flex items-center space-x-4  justify-between ">
-              <label form="file-upload" className="flex items-center space-x-1 text-gray-500 cursor-pointer">
+            <div className="flex items-center space-x-4 justify-between">
+              <label htmlFor="file-upload" className="flex items-center space-x-1 text-gray-500 cursor-pointer">
                 <i data-feather="image"></i>
                 <span>Pictures</span>
                 <input id="file-upload" type="file" className="hidden" accept="image/*" />
               </label>
-              <label form="video-upload" className="flex items-center space-x-2 text-gray-500 cursor-pointer">
+              <label htmlFor="video-upload" className="flex items-center space-x-2 text-gray-500 cursor-pointer">
                 <i data-feather="video"></i>
                 <span>Video</span>
                 <input id="video-upload" type="file" className="hidden" accept="video/*" />
               </label>
-              <button className="bg-green-700  text-white px-4 py-2 rounded-full flex justify-between  space-x-1 ">
-                <i className="penter-icon text-white" data-feather="edit">
-                </i>
+              <button className="bg-green-700 text-white px-4 py-2 rounded-full flex items-center space-x-1">
+                <i className="text-white" data-feather="edit"></i>
                 <span>Create A Post</span>
               </button>
             </div>
@@ -77,15 +89,18 @@ const TestPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-1/4 bg-white p-4 shadow-md">
-          <h2 className="text-lg font-bold text-green-900 mb-4">LIST ACTIVE USER</h2>
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <img src="/sample-pfp.png" alt="Active User" className="h-8 w-8 rounded-full" />
-              <div>
-                <h4 className="font-bold text-black">NoitrX</h4>
-                <span className="text-gray-500">@rajablits</span>
-              </div>
+        <div className="flex-grow p-2 ">
+          <div className="max-w-screen bg-white  p-4 shadow-md">
+            <h2 className="text-xl font-bold mr-10 text-green-900 mb-4">LIST ACTIVE USER</h2>
+            <div className="space-y-3">
+              {LastactiveUsers.map((user, index) => (
+                <LastActiveUser
+                  key={index}
+                  username={user.username}
+                  displayName={user.displayName}
+                  profilePicture={user.profilePicture}
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -95,4 +110,3 @@ const TestPage: React.FC = () => {
 };
 
 export default TestPage;
-
