@@ -8,13 +8,13 @@ const RegisterPage: React.FC = () => {
           <div className="bg-white px-10 py-12">
             <h1 className="text-2xl text-black text-center font-bold mb-10 px-4">Register Here</h1>
             <div className="mb-4">
-              <input className="w-full px-3 py-2 mb-2 border border-gray-300 rounded-2xl" type="text" placeholder="Username" />
+              <input className="w-full px-3 py-2 mb-2 text-black border border-gray-300 rounded-2xl" type="text" placeholder="Username" />
             </div>
             <div className="mb-4">
-              <input className="w-full px-3 py-2 border border-gray-300 rounded-2xl" type="password" placeholder="Password" />
+              <input className="w-full px-3 py-2 border text-black border-gray-300 rounded-2xl" type="password" placeholder="Password" />
             </div>
             <div className="mb-6">
-              <input className="w-full px-3 py-2 border border-gray-300 rounded-2xl" type="password" placeholder="Confirm Password" />
+              <input className="w-full px-3 py-2 border text-black border-gray-300 rounded-2xl" type="password" placeholder="Confirm Password" />
             </div>
             <button className="w-full py-2 mb-4 mt-32 bg-green-800 text-white font-semibold rounded hover:bg-green-900">Register Now</button>
           </div>

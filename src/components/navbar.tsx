@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
         <input
           type="text"
           placeholder="Cari Apa nich ? ...."
-          className="border border-gray-300 rounded-full px-4 py-2 w-full"
+          className="border border-gray-300 rounded-full text-black px-4 py-2 w-full"
         />
         <button
           type="submit"

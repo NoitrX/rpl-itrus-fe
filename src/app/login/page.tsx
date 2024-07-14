@@ -8,10 +8,10 @@ const LoginPage: React.FC = () => {
           <div className="bg-white px-10 py-12">
             <h1 className="text-2xl text-black text-center font-bold mb-10 px-4">Login Here</h1>
             <div className="mb-4">
-              <input className="w-full px-3 py-2 mb-2 border border-gray-300 rounded-2xl" type="email" placeholder="Email" />
+              <input className="w-full text-black px-3 py-2 mb-2 border border-gray-300 rounded-2xl" type="email" placeholder="Email/NIM" />
             </div>
             <div className="mb-6">
-              <input className="w-full px-3 py-2 border border-gray-300 rounded-2xl" type="password" placeholder="Password" />
+              <input className="w-full text-black px-3 py-2 border border-gray-300 rounded-2xl" type="password" placeholder="Password" />
             </div>
             <div className="flex items-center justify-between mb-36 py-1">
               <div className="flex items-center">
