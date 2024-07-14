@@ -25,19 +25,19 @@ export default function LayoutAdmin({ children }: { children: React.ReactNode })
             <ul>
               <li className={` flex items-center rounded-lg p-4 ${pathname === "/reported-user" ? "bg-emerald-900 text-white p-4" : ""}`}>
                 <i data-feather="alert-triangle" className="mr-2"></i>
-                <Link href="/search">
+                <Link href="/reported-user">
                   <h2>Reported User</h2>
                 </Link>
               </li>
               <li className={` flex items-center rounded-lg p-4 ${pathname === "/list-user" ? "bg-emerald-900 text-white p-4" : ""}`}>
-                <i data-feather="heart" className="mr-2"></i>
-                <Link href="/liked">
+                <i data-feather="user" className="mr-2"></i>
+                <Link href="/list-user">
                   <h2>List User</h2>
                 </Link>
               </li>
               <li className={` flex items-center rounded-lg p-4 ${pathname === "/list-blog" ? "bg-emerald-900 text-white p-4" : ""}`}>
-                <i data-feather="user" className="mr-2"></i>
-                <Link href="/profile">
+                <i data-feather="archive" className="mr-2"></i>
+                <Link href="/list-blog">
                   <h2>List Blog</h2>
                 </Link>
               </li>
