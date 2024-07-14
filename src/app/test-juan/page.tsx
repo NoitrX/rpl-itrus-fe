@@ -5,7 +5,7 @@ import Sidebar from "../../components/sidebar";
 import Navbar from "../../components/navbar";
 import PostDisplay from "../../components/PostDisplay";
 import LastActiveUser from "../../components/ListActiveUser";
-import feather from "feather-icons"; // Ensure you've imported feather-icons properly
+import feather from "feather-icons"; 
 
 const TestPage: React.FC = () => {
   const posts = [
