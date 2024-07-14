@@ -14,7 +14,7 @@ export default function LayoutAdmin({ children }: { children: React.ReactNode })
     <div className="max-w-screen bg-white flex flex-col">
       <Navbar />
       <div className="flex">
-        <div className="h-screen w-56 bg-white text-emerald-900 p-4 shadow-md">
+        <div className="h-screen w-1/4 bg-white text-emerald-900 p-4 shadow-md">
           <div className={` flex items-center rounded-lg ${pathname === "/admin" ? "bg-emerald-900 text-white p-4" : ""}`}>
             <i data-feather="home" className="mr-2"></i>
             <Link href="/">
@@ -44,7 +44,7 @@ export default function LayoutAdmin({ children }: { children: React.ReactNode })
             </ul>
           </nav>
         </div>
-        <div>{children}</div>
+        <div className="w-full">{children}</div>
       </div>
     </div>
   );
