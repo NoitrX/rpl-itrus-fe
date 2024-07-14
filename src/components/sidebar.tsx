@@ -1,8 +1,8 @@
 // src/components/Sidebar.tsx
 
-import React, { useEffect } from 'react';
-import Link from 'next/link';
-import feather from 'feather-icons';
+import React, { useEffect } from "react";
+import Link from "next/link";
+import feather from "feather-icons";
 
 const Sidebar: React.FC = () => {
   useEffect(() => {

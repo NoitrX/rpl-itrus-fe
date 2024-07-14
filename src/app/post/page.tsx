@@ -5,7 +5,7 @@ import Sidebar from "../../components/sidebar";
 import Navbar from "../../components/navbar";
 import PostDisplay from "../../components/PostDisplay";
 import LastActiveUser from "../../components/ListActiveUser";
-import feather from "feather-icons"; 
+import feather from "feather-icons";
 
 const TestPage: React.FC = () => {
   const posts = [
@@ -37,10 +37,10 @@ const TestPage: React.FC = () => {
       profilePicture: "/sample-pfp.png",
     },
     {
-        username: "rajablits",
-        displayName: "NoitrX",
-        profilePicture: "/sample-pfp.png",
-    }
+      username: "rajablits",
+      displayName: "NoitrX",
+      profilePicture: "/sample-pfp.png",
+    },
   ];
 
   return (
@@ -94,12 +94,7 @@ const TestPage: React.FC = () => {
             <h2 className="text-xl font-bold mr-10 text-green-900 mb-4">LIST ACTIVE USER</h2>
             <div className="space-y-3">
               {ListactiveUsers.map((user, index) => (
-                <LastActiveUser
-                  key={index}
-                  username={user.username}
-                  displayName={user.displayName}
-                  profilePicture={user.profilePicture}
-                />
+                <LastActiveUser key={index} username={user.username} displayName={user.displayName} profilePicture={user.profilePicture} />
               ))}
             </div>
           </div>
