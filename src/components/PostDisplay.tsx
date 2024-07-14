@@ -20,7 +20,7 @@ export default function PostDisplay(
     return (
         <div className="w-full relative bg-white rounded-xl px-4 flex gap-3">
             <div className="object-cover overflow-hidden my-4 w-11 h-11 rounded-full">
-                <img src={data.profilePicture} />
+                <img src={data.profilePicture}  className="rounded-full"/>
             </div>
             <div className="flex flex-col">
                 <div className="mt-2">

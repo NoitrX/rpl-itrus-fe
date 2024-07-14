@@ -12,7 +12,7 @@ const ProfilePage = () => {
       displayName: "Yuna_1234",
       username: "Yuna",
       profilePicture: "/sample-pfp.png",
-      caption: "IH. ITU ANAK TETANGGA KO GITU BGT. SOMBONG BELI BARANG BARU LANGSUNG DI PAMERIN. AKUSIH EWWW BGT YH. JYJYCK SM ORG KEA GTU. IHHHHH.",
+      caption: "IH. ITU ANAK TETANGGA KO GITU BGT. SOMBONG BELI LAPTOP  LANGSUNG DI PAMERIN. AKUSIH EWWW BGT YH. JYJYCK SM ORG KEA GTU. IHHHHH.",
       likeCount: 19000,
       commentCount: 19000,
       shareCount: 19000,
@@ -39,11 +39,11 @@ const ProfilePage = () => {
         <Sidebar />
         <div className="flex-grow">
           <ProfileHeader />
-          <div className="bg-green-900 gap-72 text-white flex justify-center space-x-4 py-2 rounded-lg">
-            <button className="font-bold  flex gap-2 py-2 px-4">
+          <div className=" text-white flex justify-center px-4 space-x-4 py-2">
+            <button className="font-bold bg-emerald-900 text-center flex gap-2 py-2 px-4 rounded-lg flex-grow">
               <i className="text-white" data-feather="plus-square"></i>POST
             </button>
-            <button className="font-bold flex gap-2 py-2 px-4">
+            <button className="font-bold bg-emerald-900 flex gap-2 py-2 px-4 rounded-lg flex-grow ">
               <i className="text-white " data-feather="heart"></i>LIKE
             </button>
           </div>
@@ -74,7 +74,7 @@ const ProfileHeader = () => (
       <div className="profile-info absolute bottom-0 left-4 transform translate-y-1/2">
         <img src="/sample-pfp.png" alt="Profile" className="w-24 h-24 rounded-full border-4 border-white" />
       </div>
-      <button className="absolute top-2 mt-32 mr-6 right-2 bg-green-900 text-white px-6 py-2 rounded flex items-center space-x-5">
+      <button className="absolute top-2 mt-32 mr-6 right-2 bg-emerald-900 text-white px-6 py-2 rounded flex items-center space-x-5">
         <i className="text-white h-5" data-feather="edit"></i>
         EDIT
       </button>

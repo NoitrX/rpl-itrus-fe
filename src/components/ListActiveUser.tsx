@@ -14,7 +14,7 @@ const LastActiveUser: React.FC<ListActiveUserProps> = ({ username, displayName, 
   }, []);
 
   return (
-    <div className="flex items-center  space-x-2">
+    <div className="flex items-center  space-x-2 bg-white p-2">
     <img src={profilePicture} alt="Last Active User" className="h-8 w-8 rounded-full" />
     <div>
       <h4 className="font-bold text-black">{displayName}</h4>

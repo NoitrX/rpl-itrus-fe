@@ -23,7 +23,7 @@ const TestPage: React.FC = () => {
       displayName: "Yuna_1234",
       username: "Yuna",
       profilePicture: "/sample-pfp.png",
-      caption: "IH. ITU ANAK TETANGGA KO GITU BGT. SOMBONG BELI BARANG BARU LANGSUNG DI PAMERIN. AKUSIH EWWW BGT YH. JYJYCK SM ORG KEA GTU. IHHHHH.",
+      caption: "IH. ITU ANAK TETANGGA KO GITU BGT. SOMBONG BELI LAPTOP BARU LANGSUNG DI PAMERIN. AKUSIH EWWW BGT YH. JYJYCK SM ORG KEA GTU. IHHHHH.",
       likeCount: 19000,
       commentCount: 19000,
       shareCount: 19000,

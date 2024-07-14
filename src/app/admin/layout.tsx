@@ -15,8 +15,8 @@ export default function LayoutAdmin({ children }: { children: React.ReactNode })
       <Navbar />
       <div className="flex">
         <div className="h-screen w-1/4 bg-white text-emerald-900 p-4 shadow-md">
-          <div className={` flex items-center rounded-lg ${pathname === "/admin" ? "bg-emerald-900 text-white p-4" : ""}`}>
-            <i data-feather="home" className="mr-2"></i>
+          <div className={` flex items-center rounded-lg px-4 ${pathname === "/admin" ? "bg-emerald-900 text-white p-4" : ""}`}>
+            <i data-feather="home" className="mr-2 "></i>
             <Link href="/">
               <h2>Home</h2>
             </Link>
