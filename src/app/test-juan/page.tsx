@@ -90,7 +90,7 @@ const TestPage: React.FC = () => {
         </div>
 
         <div className="flex-grow p-2 ">
-          <div className="max-w-screen bg-white  p-4 shadow-md">
+          <div className="max-w-screen bg-white p-4 shadow-md">
             <h2 className="text-xl font-bold mr-10 text-green-900 mb-4">LIST ACTIVE USER</h2>
             <div className="space-y-3">
               {ListactiveUsers.map((user, index) => (

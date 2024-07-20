@@ -39,11 +39,11 @@ const ProfilePage = () => {
         <Sidebar />
         <div className="flex-grow">
           <ProfileHeader />
-          <div className=" text-white flex justify-center px-4 space-x-4 py-2">
-            <button className="font-bold bg-emerald-900 text-center flex gap-2 py-2 px-4 rounded-lg flex-grow">
+          <div className=" text-white flex justify-center px-4 space-x-80 py-2 bg-emerald-900 rounded-2xl">
+            <button className="font-bold flex gap-2 py-1 my-2 mx-4 border-b-2 border-white">
               <i className="text-white" data-feather="plus-square"></i>POST
             </button>
-            <button className="font-bold bg-emerald-900 flex gap-2 py-2 px-4 rounded-lg flex-grow ">
+            <button className="font-bold flex gap-2 py-1 my-2 mx-4">
               <i className="text-white " data-feather="heart"></i>LIKE
             </button>
           </div>
